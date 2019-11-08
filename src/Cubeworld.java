@@ -23,6 +23,16 @@ public class Cubeworld
 	{
 		return theDamned.get(name.nextInt(amount)).scream();
 	}
+	public void takeScreenCapture()
+	{
+		try
+		{
+			jacob.captureScreen("yaes.png");
+		} catch (Exception e)
+		{
+			e.printStackTrace();
+		}
+	}
 	public void shutdown(int time)
 	{
 		String shutdownCommand;
